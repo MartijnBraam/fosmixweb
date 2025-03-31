@@ -11,8 +11,8 @@ export default {
   name: 'App',
   components: {
     Header,
-    VideoPage
-  }
+    VideoPage,
+  },
 }
 </script>
 
@@ -47,6 +47,7 @@ body, html {
   color: white;
   height: 100%;
 }
+
 main {
   height: calc(100% - 48px);
 }

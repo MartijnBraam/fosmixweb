@@ -1,0 +1,31 @@
+$color: #eeeeec;
+$background: #353535;
+$border-radius: 3px;
+
+$border-color: darken($background, 10%);
+$border-color-alt: darken($background, 17%);
+
+.adwButton {
+  padding: 5px 10px;
+  border-radius: $border-radius;
+  min-height: 24px;
+  min-width: 16px;
+  font-weight: bold;
+  border: 1px solid;
+  color: $color;
+  border-color: $border-color;
+  border-bottom-color: $border-color-alt;
+  background-image: linear-gradient(to bottom, darken($background, 2%), darken($background, 4%) 60%, darken($background, 6%));
+  text-shadow: 0 -1px rgba(0, 0, 0, 0.827451);
+  box-shadow: inset 0 1px rgba(255, 255, 255, 0.05);
+
+  &:hover {
+    background-image: linear-gradient(to bottom, darken($background, 1%), darken($background, 2%) 60%, darken($background, 4%));
+  }
+
+  &:active {
+    background-image: none;
+    background-color: darken($background, 6%);
+    text-shadow: none;
+  }
+}

@@ -9,18 +9,21 @@
       <label><span>Program</span></label>
     </div>
     <div id="controls" class="panel">
-
+      <VideoSelector></VideoSelector>
     </div>
     <aside>Sidebar</aside>
   </main>
 </template>
 
 <script>
+import VideoSelector from "@/components/VideoSelector";
+
 export default {
   name: 'VideoPage',
   props: {
     msg: String
-  }
+  },
+  components: {VideoSelector},
 }
 </script>
 
@@ -65,8 +68,9 @@ label {
   height: 24px;
   text-align: center;
 }
+
 label span {
-  background: rgba(0,0,0,0.5);
+  background: rgba(0, 0, 0, 0.5);
   border-radius: 3px;
   display: inline-block;
   padding: 2px 10px;
